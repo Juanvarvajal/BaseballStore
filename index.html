@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Baseball Store Nicaragua</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Baseball Store Nicaragua</h1>
+
+    <nav>
+        <a href="#productos">Productos</a>
+        <a href="#carrito">Carrito</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="banner">
+    <h2>Todo para tu pasión por el béisbol</h2>
+    <p>Uniformes, guantes, gorras y mucho más.</p>
+</section>
+
+<section id="productos">
+
+    <h2>Productos Destacados</h2>
+
+    <div class="productos-grid">
+
+        <div class="producto">
+            <img src="camiseta.emj" alt="Camisetas">
+
+            <h3>Camiseta Profesional</h3>
+
+            <p>$35</p>
+
+            <button onclick="agregarCarrito('Camiseta Profesional', 35)">
+                Agregar
+            </button>
+        </div>
+
+        <div class="producto">
+            <img src="Pantalon.emj.jpg" alt="Pantalon">
+
+            <h3>Pantalones</h3>
+
+            <p>$35</p>
+
+            <button onclick="agregarCarrito('Pantalones', 35)">
+                Agregar
+            </button>
+        </div>
+
+        <div class="producto">
+            <img src="Guante.emj.jpg" alt="Guante">
+
+            <h3>Guante de Béisbol</h3>
+
+            <p>$50</p>
+
+            <button onclick="agregarCarrito('Guante de Béisbol', 50)">
+                Agregar
+            </button>
+        </div>
+
+        <div class="producto">
+            <img src="Corras.jpg" alt="Gorra">
+
+            <h3>Gorra Deportiva</h3>
+
+            <p>$15</p>
+
+            <button onclick="agregarCarrito('Gorra Deportiva', 15)">
+                Agregar
+            </button>
+        </div>
+
+        <div class="producto">
+            <img src="Bat.emj.jpg" alt="Bat">
+
+            <h3>Bat de Aluminio</h3>
+
+            <p>$80</p>
+
+            <button onclick="agregarCarrito('Bat de Aluminio', 80)">
+                Agregar
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="carrito">
+
+    <h2>Carrito de Compras</h2>
+
+    <ul id="lista-carrito"></ul>
+
+    <h3 id="total">Total: $0</h3>
+
+    <button onclick="realizarCompra()">
+        Comprar
+    </button>
+
+</section>
+
+<section id="contacto">
+
+    <h2>Contáctanos</h2>
+
+    <p>8929-9500</p>
+
+    <form>
+
+        <input type="text" placeholder="Nombre" required>
+
+        <input type="email" placeholder="Correo" required>
+
+        <textarea placeholder="Mensaje"></textarea>
+
+        <button type="submit">
+            Enviar
+        </button>
+
+    </form>
+
+</section>
+
+<footer>
+    <p>© 2026 Baseball Store Nicaragua</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
